@@ -1,0 +1,72 @@
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(45deg,#ff758c,#ff7eb3);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+.container{
+margin-top:150px;
+}
+
+.title{
+font-size:40px;
+}
+
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:15px 35px;
+background:#ff2e63;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-size:18px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+background:#ff004c;
+}
+
+.loveText{
+font-size:22px;
+margin-top:40px;
+}
+
+.slideshow{
+margin-top:40px;
+}
+
+.slide{
+width:250px;
+border-radius:20px;
+display:none;
+}
+
+.hearts::before{
+content:"❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+position:absolute;
+width:100%;
+top:0;
+animation:fall 6s linear infinite;
+}
+
+@keyframes fall{
+0%{transform:translateY(-100px);}
+100%{transform:translateY(600px);}
+}
+
+.love{
+font-size:50px;
+animation:heartbeat 1s infinite;
+}
+
+@keyframes heartbeat{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
